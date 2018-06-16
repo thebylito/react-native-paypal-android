@@ -1,0 +1,24 @@
+{
+    "name": "react-native-paypal-android",
+    "version": "0.1",
+    "description": "React Native PayPal for Android",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/thebylito/react-native-paypal-android.git"
+    },
+    "keywords": [
+      "react-native",
+      "paypal"
+    ],
+    "author": "Welington da Silva <thebylito@gmail.com>",
+    "license": "MIT",
+    "peerDependencies": {
+      "react": ">=16.4.1",
+      "react-native": ">=0.55.4"
+    },
+    "bugs": {
+      "url": "https://github.com/thebylito/react-native-paypal-android/issues"
+    },
+    "homepage": "https://github.com/thebylito/react-native-paypal-android"
+  }
