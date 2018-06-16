@@ -13,8 +13,8 @@
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
-  - Add `import com.thebylito.reactnativepagseguro.RNPagseguroPackage;` to the imports at the top of the file
-  - Add `new RNPagseguroPackage()` to the list returned by the `getPackages()` method
+  - Add `import com.thebylito.reactnativepagseguro.RNPaypalPackage;` to the imports at the top of the file
+  - Add `new RNPaypalPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
   	include ':react-native-paypal-android'
@@ -52,7 +52,7 @@ export default class App extends Component {
                 value: 1.99,
                 productName: 'Testanto 100',
                 currency: 'BRL',
-                mode: RNPaypal.constants.mode.PAYMENT_INTENT_AUTHORIZE
+                mode: RNPaypal.constants.mode.PAYMENT_INTENT_SALE
               });
               console.log(pay);// SUCESSS
             } catch (e) {
@@ -76,8 +76,8 @@ const styles = StyleSheet.create({
 ```
 ## API
 ```javascript
-import RNPagseguro from 'react-native-paypal-android';
+import RNPaypal from 'react-native-paypal-android';
 
 // TODO: What to do with the module?
-RNPagseguro;
+RNPaypal;
 ```
