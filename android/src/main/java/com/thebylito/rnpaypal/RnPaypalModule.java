@@ -3,7 +3,6 @@ package com.thebylito.rnpaypal;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
 
 import com.facebook.react.bridge.ActivityEventListener;
 import com.facebook.react.bridge.BaseActivityEventListener;
@@ -99,7 +98,7 @@ public class RnPaypalModule extends ReactContextBaseJavaModule  implements Lifec
         constants.put("PAYMENT_INTENT_AUTHORIZE", PAYMENT_INTENT_AUTHORIZE);
         return constants;
     }
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+
     @ReactMethod
     public void setUserAccount(ReadableMap account, Promise promise){
         if(!account.hasKey("clientId")){
