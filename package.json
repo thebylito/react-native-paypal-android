@@ -1,6 +1,6 @@
 {
     "name": "react-native-paypal-android",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "React Native PayPal for Android",
     "main": "index.js",
     "repository": {
